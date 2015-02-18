@@ -1,0 +1,219 @@
+/* --------------------------------------------------------------------------------
+ *      style_box.css
+ * -------------------------------------------------------------------------------- */
+
+/* ページ全体
+----------------------------------------------- */
+html {
+	height: 100%
+}
+
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    margin: 0px;
+    padding: 0px;
+    font: normal normal 14px 'メイリオ', Trebuchet, Verdana, sans-serif;
+}
+
+/* パーツ
+----------------------------------------------- */
+#spc1 { height: 1px; clear: both; }
+#spc2 { height: 2px; clear: both; }
+#spc3 { height: 3px; clear: both; }
+#spc5 { height: 5px; clear: both; }
+#spc10 { height: 10px; clear: both; }
+
+/* colorbox内画面設定
+----------------------------------------------- */
+#box_detail {
+    overflow: auto;
+    background-color: white;
+    text-align: center;
+    width: 95%;
+    height: 90%;
+}
+
+#box_main {
+    overflow: auto;
+    background-color: white;
+    text-align: center;
+    width: 95%;
+    height: 80%;
+}
+
+#box_detail .parts_details, #box_main .parts_details {
+    float: left;
+    width: 50%;
+    min-width: 320px;
+}
+
+/* マップ表示設定
+----------------------------------------------- */
+#map_detail {
+    margin: 5px;
+    height: 300px;
+    padding: 10px;
+}
+
+/* 項目エリア
+----------------------------------------------- */
+#viewplacename {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 100%;
+    padding: 5px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    border-top:1px solid darkblue;
+    border-bottom:1px solid darkblue;
+}
+
+#infoset_params_title {
+	margin-top: 5px;
+        padding: 5px;
+        text-align: left;
+        background-color: darkblue;
+	color: white;
+	font-weight: bold;
+}
+
+#infoset_params {
+    padding: 5px;
+    margin-top: 2px;
+    text-align: left;
+}
+
+#infoset_params_spc {
+	margin-top: 5px;
+}
+
+/* ステータス表示
+----------------------------------------------- */
+#infoset_params .set_center {
+    text-align: center;
+    border: 1px black solid;
+}
+
+#infoset_status_0 {
+    background-color: lightgray;
+    color: black;
+}
+
+#infoset_status_1 {
+    background-color: yellow;
+    color: black;
+}
+
+#infoset_status_2 {
+    background-color: white;
+    color: black;
+}
+
+#infoset_status_3 {
+    background-color: white;
+    color: black;
+}
+
+#infoset_status_4 {
+    background-color: white;
+    color: black;
+}
+
+/* エラー表示 */
+#err_msg {
+    width: 90%;
+    padding: 5px;
+    background-color: lightpink;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    border:1px solid red;
+}
+
+/* 入力エリア */
+.infoset_params_select {
+	border: 0;
+	padding: 10px;
+	border: solid 1px #ccc;
+	background-color: white;
+	margin: 0 0 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-moz-appearance: button;
+	-webkit-appearance: button;
+	appearance: button;
+}
+
+.infoset_params_textbox, .infoset_params_area {
+	/* border: 0; */
+	padding: 10px;
+	border: solid 1px #ccc;
+	/* margin: 0 0 5px; */
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-moz-appearance: button;
+	-webkit-appearance: button;
+	appearance: button;
+}
+
+input:focus {
+	border:solid 1px #EEA34A;
+}
+
+#act_button {
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+}
+
+.act_button_input_darkblue {
+    width: 90%;
+    margin: 0;
+    padding: 10px;
+	background: -webkit-gradient(linear, left top, left bottom, from(darkblue), to(#35509F));
+	border: 1px darkblue solid;
+    color: white;
+	font-size: 16px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: 0 2px 2px #CCC;
+    text-shadow: 1px 2px 3px #C45C00;
+}
+
+.act_button_input_lightblue {
+    width: 90%;
+    margin: 0;
+    padding: 10px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#3399cc), to(lightblue));
+	border: 1px darkblue solid;
+    color: black;
+	font-size: 16px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: 0 2px 2px #CCC;
+}
+
+.act_button_input_red {
+    width: 90%;
+    margin: 0;
+    padding: 10px;
+	background: -webkit-gradient(linear, left top, left bottom, from(red), to(#ff3300));
+	border: 1px red solid;
+    color: white;
+	font-size: 16px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: 0 2px 2px #CCC;
+    text-shadow: 1px 2px 3px #C45C00;
+}
+
+
+
