@@ -57,7 +57,6 @@ class getPlaceDetailModule
  */
 	function getPlaceSql($params = null)
 	{
-		//
 		// 抽出条件の設定
 		$colArray = array(
 			$params[PLACE_ID]

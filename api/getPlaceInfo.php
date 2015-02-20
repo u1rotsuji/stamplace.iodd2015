@@ -57,6 +57,11 @@ class getPlaceInfoModule
  */
 	function getPlaceSql($params = null)
 	{
+		// 抽出条件の設定
+// *** 条件を追加する時は、ここに項目を追加して下さい
+		$colArray = array(
+//			$params[PLACE_ID]
+		);
 		// SQL文の編集
 		$sqlStr  = "SELECT p.place_id";		// 場所ID
 		$sqlStr .= ", p.lat";							// 緯度
